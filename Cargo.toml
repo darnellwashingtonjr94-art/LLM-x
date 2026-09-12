@@ -1,0 +1,21 @@
+[package]
+name = "llm-x-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Darion Kellar"]
+description = "Decentralized, fault-tolerant multi-agent infrastructure core execution engine"
+license = "MIT"
+
+[dependencies]
+# Asynchronous runtime for multi-transport network bonding
+tokio = { version = "1.36", features = ["full"] }
+
+# Serialization for agent communication and telemetry
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# High-performance error handling
+anyhow = "1.0"
+
+# Data parallelism for zero-downtime execution resilience
+rayon = "1.9"
