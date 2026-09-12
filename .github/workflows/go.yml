@@ -1,9 +1,17 @@
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./llm-x-agents # Change this to the exact folder containing go.mod
+        working-directory: ./llm-x-agents
     steps:
       - uses: actions/checkout@v4
       - name: Set up Go
