@@ -1,9 +1,13 @@
 import yaml
+import subprocess
 
-def trigger_fine_tuning():
-    with open("configs/dpo_training_config.yaml", "r") as f:
+def run_dpo_flywheel(config_path: str = "configs/dpo_training_config.yaml"):
+    with open(config_path, "r") as f:
         config = yaml.safe_load(f)
-    print(f"[DPO Pipeline] Triggering fine-tuning flywheel with model: {config.get('model_name', 'base')}")
+        
+    print(f"Triggering Direct Preference Optimization with batch size: {config.get('batch_size', 32)}")
+    # Trigger training backend subprocess
+    subprocess.run(["echo", "Executing automated model weight adjustment via self-correction flywheel..."])
 
 if __name__ == "__main__":
-    trigger_fine_tuning()
+    run_dpo_flywheel()
