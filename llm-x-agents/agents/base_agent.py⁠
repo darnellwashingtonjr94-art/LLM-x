@@ -1,7 +1,0 @@
-class BaseAgent:
-    def __init__(self, name: str, competency_id: int):
-        self.name = name
-        self.competency_id = competency_id
-
-    def execute(self, payload: dict) -> dict:
-        raise NotImplementedError("Execution logic must be implemented by specialist.")
