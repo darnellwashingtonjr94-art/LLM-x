@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="IMG_4262.jpeg" alt="LLM-x" width="600">
+</p>
+
+<h1 align="center">LLM-x</h1>
+
 # 🤖 LLM-x
 
 **LLM-x is a decentralized, fault-tolerant multi-agent infrastructure designed to replace monolithic models with a specialized swarm of 10 micro-competencies. It features an automated DPO self-correction flywheel and multi-transport network bonding for zero-downtime execution resilience.**
